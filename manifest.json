@@ -1,0 +1,14 @@
+{
+  "name": "GCP Gemini Remover",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Removes the Gemini buttons, etc. from GCP",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://console.cloud.google.com/*"]
+    }
+  ]
+}
